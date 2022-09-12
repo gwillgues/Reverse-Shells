@@ -16,7 +16,7 @@ Usage:
 
 # Golang
 
-Golang reverse shell. Change /bin/bash string to powershell,cmd,/bin/sh, or whatever shell for whatever OS you need.
+Golang reverse shell. Does runtime OS detection and selects propert shell for Windows, Mac, and Linux. Is not detected currently by Microsoft Defender.
 To Compile:
 
 Linux:
