@@ -14,7 +14,7 @@ Usage:
 
 # Golang
 
-Golang reverse shell. Does runtime OS detection and selects propert shell for Windows, Mac, and Linux. Is not detected currently by Microsoft Defender.
+Golang reverse shell. Does runtime OS detection and selects proper shell for Windows, Mac, and Linux. Is not detected currently by Microsoft Defender.
 To Compile:
 
 Linux:
