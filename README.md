@@ -33,7 +33,7 @@ To run, provide the IP address and port as command line arguments:
 
 
 
-# Golang DLL
+# Golang DLL Reverse Shell
 
 Golang DLL reverse shell designed to be run with rundll32.exe. This currently has the IP and port hardcoded. Modify the IP and port in the source code.
 To Compile:
