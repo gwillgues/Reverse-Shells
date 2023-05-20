@@ -55,7 +55,7 @@ Cross compile on Linux for Windows:
 64 bit DLL
 
 
-<code>env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc go build -ldflags="-s -w" -buildmode=c-shared -o revshell32.dll revshell_dll.go</code>
+<code>env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc go build -ldflags="-s -w" -buildmode=c-shared -o revshell64.dll revshell_dll.go</code>
 
 To run:
 
