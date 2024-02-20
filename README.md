@@ -41,7 +41,7 @@ To Compile:
 Linux:
 You will need to install the following packages on Ubuntu
 
-<code>sudo apt install golang gcc build-essential gcc-mingw-w64-x86-64 gcc-mingw-w64-i68</code>
+<code>sudo apt install golang gcc build-essential gcc-mingw-w64-x86-64 gcc-mingw-w64-i686</code>
 
 
 Cross compile on Linux for Windows:
